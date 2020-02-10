@@ -1,0 +1,903 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90871138E14C8E4E02EF624D /* Pods_MedicalHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED116832FD34A1AA1073E009 /* Pods_MedicalHub.framework */; };
+		9F4BE5FF23C88871000DB296 /* CountryPopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BE5FE23C88871000DB296 /* CountryPopOverViewController.swift */; };
+		9F4BE60123C88B7D000DB296 /* CodesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BE60023C88B7D000DB296 /* CodesTableViewCell.swift */; };
+		9F4BE60323C88BA7000DB296 /* CodesPopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BE60223C88BA7000DB296 /* CodesPopOverViewController.swift */; };
+		9F653B4023C5FC880038C910 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F653B3F23C5FC880038C910 /* EditProfileViewController.swift */; };
+		9F653B4223C5FE1B0038C910 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F653B4123C5FE1B0038C910 /* SideMenuViewController.swift */; };
+		9F653B7523C7333C0038C910 /* Popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F653B6F23C7333C0038C910 /* Popover.swift */; };
+		9F653B7623C7333C0038C910 /* UIViewControler+Popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F653B7023C7333C0038C910 /* UIViewControler+Popover.swift */; };
+		9F653B7723C7333C0038C910 /* PopoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F653B7123C7333C0038C910 /* PopoverCell.swift */; };
+		9F653B7823C7333C0038C910 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F653B7223C7333C0038C910 /* PopoverView.swift */; };
+		9F653B7923C7333C0038C910 /* PopoverItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F653B7323C7333C0038C910 /* PopoverItem.swift */; };
+		9F653B7A23C7333C0038C910 /* PopoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F653B7423C7333C0038C910 /* PopoverController.swift */; };
+		9F7B6B7623CC2582009D848A /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7B6B7523CC2582009D848A /* SwiftyJSON.swift */; };
+		9F7B6B7C23CC525E009D848A /* InquiryMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7B6B7B23CC525E009D848A /* InquiryMenuViewController.swift */; };
+		9F7B6B7E23CC526D009D848A /* PatientMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7B6B7D23CC526D009D848A /* PatientMenuViewController.swift */; };
+		9F7B6B8023CC536B009D848A /* InquiryMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7B6B7F23CC536B009D848A /* InquiryMenuTableViewCell.swift */; };
+		9F7B6B8223CC537E009D848A /* PatientMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7B6B8123CC537E009D848A /* PatientMenuTableViewCell.swift */; };
+		9F7B6B8423CC82C1009D848A /* AddPatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7B6B8323CC82C1009D848A /* AddPatientViewController.swift */; };
+		9F7B6B8623CC83CD009D848A /* AddInquiryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7B6B8523CC83CD009D848A /* AddInquiryViewController.swift */; };
+		9F7B6B8823CC8582009D848A /* AddInquiryTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7B6B8723CC8582009D848A /* AddInquiryTwoViewController.swift */; };
+		9F7B6B8A23CC8AFC009D848A /* InquiryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7B6B8923CC8AFC009D848A /* InquiryDetailsViewController.swift */; };
+		9F7F210C23C5A8EC00D9FDE3 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F210B23C5A8EC00D9FDE3 /* MyProfileViewController.swift */; };
+		9F7F211A23C5CE0B00D9FDE3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F211923C5CE0B00D9FDE3 /* SWRevealViewController.m */; };
+		9F9737FF23C5DE8400CBC865 /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9737FE23C5DE8400CBC865 /* SideMenuTableViewCell.swift */; };
+		9F97380123C5DFAE00CBC865 /* HomeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F97380023C5DFAE00CBC865 /* HomeMenuViewController.swift */; };
+		9FC274F323DD66A900F53B5B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC274F223DD66A900F53B5B /* Constants.swift */; };
+		9FC2750723DD7DD400F53B5B /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2750623DD7DD400F53B5B /* ReachabilityManager.swift */; };
+		9FC9327823D704D700EEB310 /* credentials-3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FC9327723D704D600EEB310 /* credentials-3.plist */; };
+		9FC9327A23D7064300EEB310 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC9327923D7064200EEB310 /* UserModel.swift */; };
+		9FCACB9D23DEC518002C723D /* MagazineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCACB9C23DEC518002C723D /* MagazineViewController.swift */; };
+		9FCACB9F23DEC56F002C723D /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCACB9E23DEC56F002C723D /* AboutUsViewController.swift */; };
+		9FCACBA123DEC57D002C723D /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCACBA023DEC57D002C723D /* ContactUsViewController.swift */; };
+		9FCCEDB523D9B8C100020B67 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCCEDB423D9B8C100020B67 /* Network.swift */; };
+		9FCCEDB723D9C04400020B67 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCCEDB623D9C04300020B67 /* Account.swift */; };
+		9FCCEDB923DC693300020B67 /* newViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCCEDB823DC693300020B67 /* newViewController.swift */; };
+		9FD292BE23C7C813007A7A71 /* SideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD292BD23C7C813007A7A71 /* SideMenu.storyboard */; };
+		9FD550C523D56F2C00CA99F3 /* EditPatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD550C423D56F2C00CA99F3 /* EditPatientViewController.swift */; };
+		9FDE8B7723DCC9670093017B /* customDropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE8B7623DCC9670093017B /* customDropdown.swift */; };
+		9FDE8B7923DCCD290093017B /* customDropdownTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE8B7823DCCD290093017B /* customDropdownTableViewCell.swift */; };
+		9FDE8B7F23DCE3C30093017B /* CountryCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE8B7B23DCE3C10093017B /* CountryCode.swift */; };
+		9FDE8B8023DCE3C30093017B /* CountrySelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE8B7C23DCE3C10093017B /* CountrySelectView.swift */; };
+		9FDE8B8123DCE3C30093017B /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE8B7D23DCE3C10093017B /* CountryTableViewCell.swift */; };
+		9FDE8B8223DCE3C30093017B /* CountryPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9FDE8B7E23DCE3C10093017B /* CountryPicker.bundle */; };
+		9FFDC65923C4768100FD1D1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDC65823C4768100FD1D1A /* AppDelegate.swift */; };
+		9FFDC65B23C4768100FD1D1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDC65A23C4768100FD1D1A /* SceneDelegate.swift */; };
+		9FFDC65D23C4768100FD1D1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDC65C23C4768100FD1D1A /* ViewController.swift */; };
+		9FFDC66023C4768100FD1D1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFDC65E23C4768100FD1D1A /* Main.storyboard */; };
+		9FFDC66223C4768D00FD1D1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFDC66123C4768D00FD1D1A /* Assets.xcassets */; };
+		9FFDC66523C4768D00FD1D1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFDC66323C4768D00FD1D1A /* LaunchScreen.storyboard */; };
+		9FFDC6B523C4B8B900FD1D1A /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDC69F23C4B8B900FD1D1A /* IQTextView.swift */; };
+		9FFDC6B623C4B8B900FD1D1A /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDC6A123C4B8B900FD1D1A /* IQPreviousNextView.swift */; };
+		9FFDC6B723C4B8B900FD1D1A /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDC6A223C4B8B900FD1D1A /* IQTitleBarButtonItem.swift */; };
+		9FFDC6B823C4B8B900FD1D1A /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDC6A323C4B8B900FD1D1A /* IQBarButtonItem.swift */; };
+		9FFDC6B923C4B8B900FD1D1A /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDC6A423C4B8B900FD1D1A /* IQToolbar.swift */; };
+		9FFDC6BA23C4B8B900FD1D1A /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDC6A523C4B8B900FD1D1A /* IQUIView+IQKeyboardToolbar.swift */; };
+		9FFDC6BB23C4B8B900FD1D1A /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDC6A623C4B8B900FD1D1A /* IQInvocation.swift */; };
+		9FFDC6BC23C4B8B900FD1D1A /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDC6A823C4B8B900FD1D1A /* IQKeyboardManagerConstantsInternal.swift */; };
+		9FFDC6BD23C4B8B900FD1D1A /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDC6A923C4B8B900FD1D1A /* IQKeyboardManagerConstants.swift */; };
+		9FFDC6BE23C4B8B900FD1D1A /* IQKeyboardManagerSwift.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFDC6AB23C4B8B900FD1D1A /* IQKeyboardManagerSwift.xcassets */; };
+		9FFDC6BF23C4B8B900FD1D1A /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDC6AC23C4B8B900FD1D1A /* IQKeyboardReturnKeyHandler.swift */; };
+		9FFDC6C023C4B8B900FD1D1A /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDC6AD23C4B8B900FD1D1A /* IQKeyboardManager.swift */; };
+		9FFDC6C123C4B8B900FD1D1A /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDC6B023C4B8B900FD1D1A /* IQUIScrollView+Additions.swift */; };
+		9FFDC6C223C4B8B900FD1D1A /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDC6B123C4B8B900FD1D1A /* IQUIViewController+Additions.swift */; };
+		9FFDC6C323C4B8B900FD1D1A /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDC6B223C4B8B900FD1D1A /* IQUITextFieldView+Additions.swift */; };
+		9FFDC6C423C4B8B900FD1D1A /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDC6B323C4B8B900FD1D1A /* IQUIView+Hierarchy.swift */; };
+		9FFDC6C523C4B8B900FD1D1A /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDC6B423C4B8B900FD1D1A /* IQNSArray+Sort.swift */; };
+		9FFDC6C723C4C72F00FD1D1A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDC6C623C4C72F00FD1D1A /* LoginViewController.swift */; };
+		9FFDC6C923C4C76700FD1D1A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDC6C823C4C76700FD1D1A /* RegisterViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11725C915B88596C437C1F2A /* Pods-MedicalHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalHub.release.xcconfig"; path = "Target Support Files/Pods-MedicalHub/Pods-MedicalHub.release.xcconfig"; sourceTree = "<group>"; };
+		6CE3A625C19205D4F07CFC25 /* Pods-MedicalHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalHub.debug.xcconfig"; path = "Target Support Files/Pods-MedicalHub/Pods-MedicalHub.debug.xcconfig"; sourceTree = "<group>"; };
+		9F4BE5FE23C88871000DB296 /* CountryPopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPopOverViewController.swift; sourceTree = "<group>"; };
+		9F4BE60023C88B7D000DB296 /* CodesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodesTableViewCell.swift; sourceTree = "<group>"; };
+		9F4BE60223C88BA7000DB296 /* CodesPopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodesPopOverViewController.swift; sourceTree = "<group>"; };
+		9F653B3F23C5FC880038C910 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		9F653B4123C5FE1B0038C910 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		9F653B6F23C7333C0038C910 /* Popover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Popover.swift; sourceTree = "<group>"; };
+		9F653B7023C7333C0038C910 /* UIViewControler+Popover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewControler+Popover.swift"; sourceTree = "<group>"; };
+		9F653B7123C7333C0038C910 /* PopoverCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverCell.swift; sourceTree = "<group>"; };
+		9F653B7223C7333C0038C910 /* PopoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
+		9F653B7323C7333C0038C910 /* PopoverItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverItem.swift; sourceTree = "<group>"; };
+		9F653B7423C7333C0038C910 /* PopoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverController.swift; sourceTree = "<group>"; };
+		9F7B6B7523CC2582009D848A /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		9F7B6B7B23CC525E009D848A /* InquiryMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquiryMenuViewController.swift; sourceTree = "<group>"; };
+		9F7B6B7D23CC526D009D848A /* PatientMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientMenuViewController.swift; sourceTree = "<group>"; };
+		9F7B6B7F23CC536B009D848A /* InquiryMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquiryMenuTableViewCell.swift; sourceTree = "<group>"; };
+		9F7B6B8123CC537E009D848A /* PatientMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientMenuTableViewCell.swift; sourceTree = "<group>"; };
+		9F7B6B8323CC82C1009D848A /* AddPatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPatientViewController.swift; sourceTree = "<group>"; };
+		9F7B6B8523CC83CD009D848A /* AddInquiryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInquiryViewController.swift; sourceTree = "<group>"; };
+		9F7B6B8723CC8582009D848A /* AddInquiryTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInquiryTwoViewController.swift; sourceTree = "<group>"; };
+		9F7B6B8923CC8AFC009D848A /* InquiryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquiryDetailsViewController.swift; sourceTree = "<group>"; };
+		9F7F210B23C5A8EC00D9FDE3 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		9F7F211723C5CE0B00D9FDE3 /* MedicalHub-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MedicalHub-Bridging-Header.h"; sourceTree = "<group>"; };
+		9F7F211823C5CE0B00D9FDE3 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		9F7F211923C5CE0B00D9FDE3 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		9F9737FE23C5DE8400CBC865 /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		9F97380023C5DFAE00CBC865 /* HomeMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuViewController.swift; sourceTree = "<group>"; };
+		9FC274F223DD66A900F53B5B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9FC2750623DD7DD400F53B5B /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		9FC9327723D704D600EEB310 /* credentials-3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "credentials-3.plist"; sourceTree = "<group>"; };
+		9FC9327923D7064200EEB310 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		9FCACB9C23DEC518002C723D /* MagazineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineViewController.swift; sourceTree = "<group>"; };
+		9FCACB9E23DEC56F002C723D /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		9FCACBA023DEC57D002C723D /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		9FCCEDB423D9B8C100020B67 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		9FCCEDB623D9C04300020B67 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		9FCCEDB823DC693300020B67 /* newViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newViewController.swift; sourceTree = "<group>"; };
+		9FD292BD23C7C813007A7A71 /* SideMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SideMenu.storyboard; sourceTree = "<group>"; };
+		9FD550C423D56F2C00CA99F3 /* EditPatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPatientViewController.swift; sourceTree = "<group>"; };
+		9FDE8B7623DCC9670093017B /* customDropdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customDropdown.swift; sourceTree = "<group>"; };
+		9FDE8B7823DCCD290093017B /* customDropdownTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customDropdownTableViewCell.swift; sourceTree = "<group>"; };
+		9FDE8B7B23DCE3C10093017B /* CountryCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCode.swift; sourceTree = "<group>"; };
+		9FDE8B7C23DCE3C10093017B /* CountrySelectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountrySelectView.swift; sourceTree = "<group>"; };
+		9FDE8B7D23DCE3C10093017B /* CountryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		9FDE8B7E23DCE3C10093017B /* CountryPicker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CountryPicker.bundle; sourceTree = "<group>"; };
+		9FFDC65523C4768100FD1D1A /* MedicalHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FFDC65823C4768100FD1D1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9FFDC65A23C4768100FD1D1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9FFDC65C23C4768100FD1D1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FFDC65F23C4768100FD1D1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9FFDC66123C4768D00FD1D1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FFDC66423C4768D00FD1D1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9FFDC66623C4768D00FD1D1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FFDC69F23C4B8B900FD1D1A /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
+		9FFDC6A123C4B8B900FD1D1A /* IQPreviousNextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQPreviousNextView.swift; sourceTree = "<group>"; };
+		9FFDC6A223C4B8B900FD1D1A /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		9FFDC6A323C4B8B900FD1D1A /* IQBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQBarButtonItem.swift; sourceTree = "<group>"; };
+		9FFDC6A423C4B8B900FD1D1A /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
+		9FFDC6A523C4B8B900FD1D1A /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		9FFDC6A623C4B8B900FD1D1A /* IQInvocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQInvocation.swift; sourceTree = "<group>"; };
+		9FFDC6A823C4B8B900FD1D1A /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		9FFDC6A923C4B8B900FD1D1A /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		9FFDC6AB23C4B8B900FD1D1A /* IQKeyboardManagerSwift.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = IQKeyboardManagerSwift.xcassets; sourceTree = "<group>"; };
+		9FFDC6AC23C4B8B900FD1D1A /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		9FFDC6AD23C4B8B900FD1D1A /* IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManager.swift; sourceTree = "<group>"; };
+		9FFDC6AE23C4B8B900FD1D1A /* IQKeyboardManagerSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerSwift.h; sourceTree = "<group>"; };
+		9FFDC6B023C4B8B900FD1D1A /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		9FFDC6B123C4B8B900FD1D1A /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		9FFDC6B223C4B8B900FD1D1A /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		9FFDC6B323C4B8B900FD1D1A /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		9FFDC6B423C4B8B900FD1D1A /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		9FFDC6C623C4C72F00FD1D1A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9FFDC6C823C4C76700FD1D1A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		ED116832FD34A1AA1073E009 /* Pods_MedicalHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicalHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FFDC65223C4768100FD1D1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90871138E14C8E4E02EF624D /* Pods_MedicalHub.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D07E97D95D3F248E4F384A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED116832FD34A1AA1073E009 /* Pods_MedicalHub.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93F5FBF9EE8E23273ECD6B21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CE3A625C19205D4F07CFC25 /* Pods-MedicalHub.debug.xcconfig */,
+				11725C915B88596C437C1F2A /* Pods-MedicalHub.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9F653B6E23C7333C0038C910 /* PopupController */ = {
+			isa = PBXGroup;
+			children = (
+				9F653B6F23C7333C0038C910 /* Popover.swift */,
+				9F653B7023C7333C0038C910 /* UIViewControler+Popover.swift */,
+				9F653B7123C7333C0038C910 /* PopoverCell.swift */,
+				9F653B7223C7333C0038C910 /* PopoverView.swift */,
+				9F653B7323C7333C0038C910 /* PopoverItem.swift */,
+				9F653B7423C7333C0038C910 /* PopoverController.swift */,
+			);
+			path = PopupController;
+			sourceTree = "<group>";
+		};
+		9F7B6B7423CC2582009D848A /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				9F7B6B7523CC2582009D848A /* SwiftyJSON.swift */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		9F7F211623C5CDF800D9FDE3 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9F7F211823C5CE0B00D9FDE3 /* SWRevealViewController.h */,
+				9F7F211923C5CE0B00D9FDE3 /* SWRevealViewController.m */,
+				9F7F211723C5CE0B00D9FDE3 /* MedicalHub-Bridging-Header.h */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		9FC274F123DD668400F53B5B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9FC274F223DD66A900F53B5B /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		9FC274F423DD75A100F53B5B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9FC2750523DD7DD400F53B5B /* Reachability Class */,
+				9FDE8B7A23DCE3C10093017B /* CountryCodeClass */,
+				9F7B6B7423CC2582009D848A /* SwiftyJSON */,
+				9F653B6E23C7333C0038C910 /* PopupController */,
+				9FFDC69D23C4B8B900FD1D1A /* IQKeyboardManagerSwift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9FC274F523DD760700F53B5B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9FC274F623DD763A00F53B5B /* Login - Registration */,
+				9FC274F923DD767E00F53B5B /* Home */,
+				9FC274FA23DD769F00F53B5B /* My Profile */,
+				9FC274FC23DD76AE00F53B5B /* Patient */,
+				9FC274FD23DD76B700F53B5B /* Inquiry */,
+				9FC274FF23DD76C400F53B5B /* Magazine */,
+				9FC2750023DD76CB00F53B5B /* About Us */,
+				9FC2750223DD76D900F53B5B /* Contact Us */,
+				9FC274F723DD764F00F53B5B /* Side Menu */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9FC274F623DD763A00F53B5B /* Login - Registration */ = {
+			isa = PBXGroup;
+			children = (
+				9FFDC6C623C4C72F00FD1D1A /* LoginViewController.swift */,
+				9FFDC6C823C4C76700FD1D1A /* RegisterViewController.swift */,
+			);
+			path = "Login - Registration";
+			sourceTree = "<group>";
+		};
+		9FC274F723DD764F00F53B5B /* Side Menu */ = {
+			isa = PBXGroup;
+			children = (
+				9F653B4123C5FE1B0038C910 /* SideMenuViewController.swift */,
+				9F9737FE23C5DE8400CBC865 /* SideMenuTableViewCell.swift */,
+			);
+			path = "Side Menu";
+			sourceTree = "<group>";
+		};
+		9FC274F923DD767E00F53B5B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9F97380023C5DFAE00CBC865 /* HomeMenuViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9FC274FA23DD769F00F53B5B /* My Profile */ = {
+			isa = PBXGroup;
+			children = (
+				9F7F210B23C5A8EC00D9FDE3 /* MyProfileViewController.swift */,
+			);
+			path = "My Profile";
+			sourceTree = "<group>";
+		};
+		9FC274FC23DD76AE00F53B5B /* Patient */ = {
+			isa = PBXGroup;
+			children = (
+				9F7B6B7D23CC526D009D848A /* PatientMenuViewController.swift */,
+				9F7B6B8323CC82C1009D848A /* AddPatientViewController.swift */,
+				9F7B6B8123CC537E009D848A /* PatientMenuTableViewCell.swift */,
+			);
+			path = Patient;
+			sourceTree = "<group>";
+		};
+		9FC274FD23DD76B700F53B5B /* Inquiry */ = {
+			isa = PBXGroup;
+			children = (
+				9F7B6B7B23CC525E009D848A /* InquiryMenuViewController.swift */,
+				9F7B6B8523CC83CD009D848A /* AddInquiryViewController.swift */,
+				9F7B6B8723CC8582009D848A /* AddInquiryTwoViewController.swift */,
+				9F7B6B8923CC8AFC009D848A /* InquiryDetailsViewController.swift */,
+				9F7B6B7F23CC536B009D848A /* InquiryMenuTableViewCell.swift */,
+			);
+			path = Inquiry;
+			sourceTree = "<group>";
+		};
+		9FC274FF23DD76C400F53B5B /* Magazine */ = {
+			isa = PBXGroup;
+			children = (
+				9FCACB9C23DEC518002C723D /* MagazineViewController.swift */,
+			);
+			path = Magazine;
+			sourceTree = "<group>";
+		};
+		9FC2750023DD76CB00F53B5B /* About Us */ = {
+			isa = PBXGroup;
+			children = (
+				9FCACB9E23DEC56F002C723D /* AboutUsViewController.swift */,
+			);
+			path = "About Us";
+			sourceTree = "<group>";
+		};
+		9FC2750223DD76D900F53B5B /* Contact Us */ = {
+			isa = PBXGroup;
+			children = (
+				9FCACBA023DEC57D002C723D /* ContactUsViewController.swift */,
+			);
+			path = "Contact Us";
+			sourceTree = "<group>";
+		};
+		9FC2750423DD7B0A00F53B5B /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				9F653B3F23C5FC880038C910 /* EditProfileViewController.swift */,
+				9FC9327923D7064200EEB310 /* UserModel.swift */,
+				9F4BE5FE23C88871000DB296 /* CountryPopOverViewController.swift */,
+				9F4BE60023C88B7D000DB296 /* CodesTableViewCell.swift */,
+				9F4BE60223C88BA7000DB296 /* CodesPopOverViewController.swift */,
+				9FD550C423D56F2C00CA99F3 /* EditPatientViewController.swift */,
+				9FCCEDB823DC693300020B67 /* newViewController.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		9FC2750523DD7DD400F53B5B /* Reachability Class */ = {
+			isa = PBXGroup;
+			children = (
+				9FC2750623DD7DD400F53B5B /* ReachabilityManager.swift */,
+			);
+			path = "Reachability Class";
+			sourceTree = "<group>";
+		};
+		9FCCEDB323D9B8B300020B67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FCCEDB423D9B8C100020B67 /* Network.swift */,
+				9FCCEDB623D9C04300020B67 /* Account.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FD292BA23C7C751007A7A71 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9FFDC65E23C4768100FD1D1A /* Main.storyboard */,
+				9FD292BD23C7C813007A7A71 /* SideMenu.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9FDE8B7523DCC9480093017B /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				9FDE8B7623DCC9670093017B /* customDropdown.swift */,
+				9FDE8B7823DCCD290093017B /* customDropdownTableViewCell.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		9FDE8B7A23DCE3C10093017B /* CountryCodeClass */ = {
+			isa = PBXGroup;
+			children = (
+				9FDE8B7B23DCE3C10093017B /* CountryCode.swift */,
+				9FDE8B7C23DCE3C10093017B /* CountrySelectView.swift */,
+				9FDE8B7D23DCE3C10093017B /* CountryTableViewCell.swift */,
+				9FDE8B7E23DCE3C10093017B /* CountryPicker.bundle */,
+			);
+			path = CountryCodeClass;
+			sourceTree = "<group>";
+		};
+		9FFDC64C23C4768100FD1D1A = {
+			isa = PBXGroup;
+			children = (
+				9FFDC65723C4768100FD1D1A /* MedicalHub */,
+				9FFDC65623C4768100FD1D1A /* Products */,
+				93F5FBF9EE8E23273ECD6B21 /* Pods */,
+				8D07E97D95D3F248E4F384A4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9FFDC65623C4768100FD1D1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FFDC65523C4768100FD1D1A /* MedicalHub.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FFDC65723C4768100FD1D1A /* MedicalHub */ = {
+			isa = PBXGroup;
+			children = (
+				9FFDC66623C4768D00FD1D1A /* Info.plist */,
+				9FC9327723D704D600EEB310 /* credentials-3.plist */,
+				9FFDC65823C4768100FD1D1A /* AppDelegate.swift */,
+				9FFDC65A23C4768100FD1D1A /* SceneDelegate.swift */,
+				9FFDC65C23C4768100FD1D1A /* ViewController.swift */,
+				9FFDC66123C4768D00FD1D1A /* Assets.xcassets */,
+				9FFDC66323C4768D00FD1D1A /* LaunchScreen.storyboard */,
+				9FC274F123DD668400F53B5B /* Constants */,
+				9FD292BA23C7C751007A7A71 /* Storyboards */,
+				9FC274F523DD760700F53B5B /* View Controllers */,
+				9FC274F423DD75A100F53B5B /* Resources */,
+				9F7F211623C5CDF800D9FDE3 /* SWRevealViewController */,
+				9FDE8B7523DCC9480093017B /* Custom Views */,
+				9FCCEDB323D9B8B300020B67 /* Model */,
+				9FC2750423DD7B0A00F53B5B /* Others */,
+			);
+			path = MedicalHub;
+			sourceTree = "<group>";
+		};
+		9FFDC69D23C4B8B900FD1D1A /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				9FFDC69E23C4B8B900FD1D1A /* IQTextView */,
+				9FFDC6A023C4B8B900FD1D1A /* IQToolbar */,
+				9FFDC6A723C4B8B900FD1D1A /* Constants */,
+				9FFDC6AA23C4B8B900FD1D1A /* Resources */,
+				9FFDC6AC23C4B8B900FD1D1A /* IQKeyboardReturnKeyHandler.swift */,
+				9FFDC6AD23C4B8B900FD1D1A /* IQKeyboardManager.swift */,
+				9FFDC6AE23C4B8B900FD1D1A /* IQKeyboardManagerSwift.h */,
+				9FFDC6AF23C4B8B900FD1D1A /* Categories */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		9FFDC69E23C4B8B900FD1D1A /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				9FFDC69F23C4B8B900FD1D1A /* IQTextView.swift */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		9FFDC6A023C4B8B900FD1D1A /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				9FFDC6A123C4B8B900FD1D1A /* IQPreviousNextView.swift */,
+				9FFDC6A223C4B8B900FD1D1A /* IQTitleBarButtonItem.swift */,
+				9FFDC6A323C4B8B900FD1D1A /* IQBarButtonItem.swift */,
+				9FFDC6A423C4B8B900FD1D1A /* IQToolbar.swift */,
+				9FFDC6A523C4B8B900FD1D1A /* IQUIView+IQKeyboardToolbar.swift */,
+				9FFDC6A623C4B8B900FD1D1A /* IQInvocation.swift */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		9FFDC6A723C4B8B900FD1D1A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9FFDC6A823C4B8B900FD1D1A /* IQKeyboardManagerConstantsInternal.swift */,
+				9FFDC6A923C4B8B900FD1D1A /* IQKeyboardManagerConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		9FFDC6AA23C4B8B900FD1D1A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9FFDC6AB23C4B8B900FD1D1A /* IQKeyboardManagerSwift.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9FFDC6AF23C4B8B900FD1D1A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9FFDC6B023C4B8B900FD1D1A /* IQUIScrollView+Additions.swift */,
+				9FFDC6B123C4B8B900FD1D1A /* IQUIViewController+Additions.swift */,
+				9FFDC6B223C4B8B900FD1D1A /* IQUITextFieldView+Additions.swift */,
+				9FFDC6B323C4B8B900FD1D1A /* IQUIView+Hierarchy.swift */,
+				9FFDC6B423C4B8B900FD1D1A /* IQNSArray+Sort.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FFDC65423C4768100FD1D1A /* MedicalHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FFDC66923C4768D00FD1D1A /* Build configuration list for PBXNativeTarget "MedicalHub" */;
+			buildPhases = (
+				BA97FB51DA4B6ADB6CF1B0CE /* [CP] Check Pods Manifest.lock */,
+				9FFDC65123C4768100FD1D1A /* Sources */,
+				9FFDC65223C4768100FD1D1A /* Frameworks */,
+				9FFDC65323C4768100FD1D1A /* Resources */,
+				A0D35F31B4923C18E09D8C0C /* [CP] Embed Pods Frameworks */,
+				AC57227D237629AAF4D3EAE8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MedicalHub;
+			productName = MedicalHub;
+			productReference = 9FFDC65523C4768100FD1D1A /* MedicalHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FFDC64D23C4768100FD1D1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Sridatta Nallamilli";
+				TargetAttributes = {
+					9FFDC65423C4768100FD1D1A = {
+						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
+					};
+				};
+			};
+			buildConfigurationList = 9FFDC65023C4768100FD1D1A /* Build configuration list for PBXProject "MedicalHub" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FFDC64C23C4768100FD1D1A;
+			productRefGroup = 9FFDC65623C4768100FD1D1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FFDC65423C4768100FD1D1A /* MedicalHub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FFDC65323C4768100FD1D1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD292BE23C7C813007A7A71 /* SideMenu.storyboard in Resources */,
+				9FFDC66523C4768D00FD1D1A /* LaunchScreen.storyboard in Resources */,
+				9FFDC66223C4768D00FD1D1A /* Assets.xcassets in Resources */,
+				9FC9327823D704D700EEB310 /* credentials-3.plist in Resources */,
+				9FDE8B8223DCE3C30093017B /* CountryPicker.bundle in Resources */,
+				9FFDC6BE23C4B8B900FD1D1A /* IQKeyboardManagerSwift.xcassets in Resources */,
+				9FFDC66023C4768100FD1D1A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0D35F31B4923C18E09D8C0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedicalHub/Pods-MedicalHub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedicalHub/Pods-MedicalHub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MedicalHub/Pods-MedicalHub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC57227D237629AAF4D3EAE8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedicalHub/Pods-MedicalHub-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedicalHub/Pods-MedicalHub-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MedicalHub/Pods-MedicalHub-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA97FB51DA4B6ADB6CF1B0CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedicalHub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FFDC65123C4768100FD1D1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FFDC6C523C4B8B900FD1D1A /* IQNSArray+Sort.swift in Sources */,
+				9FC2750723DD7DD400F53B5B /* ReachabilityManager.swift in Sources */,
+				9F4BE5FF23C88871000DB296 /* CountryPopOverViewController.swift in Sources */,
+				9FCCEDB523D9B8C100020B67 /* Network.swift in Sources */,
+				9FCACB9D23DEC518002C723D /* MagazineViewController.swift in Sources */,
+				9FFDC6BF23C4B8B900FD1D1A /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				9F7B6B7623CC2582009D848A /* SwiftyJSON.swift in Sources */,
+				9FCCEDB923DC693300020B67 /* newViewController.swift in Sources */,
+				9FFDC6BA23C4B8B900FD1D1A /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				9F653B7623C7333C0038C910 /* UIViewControler+Popover.swift in Sources */,
+				9F7B6B8423CC82C1009D848A /* AddPatientViewController.swift in Sources */,
+				9FFDC65D23C4768100FD1D1A /* ViewController.swift in Sources */,
+				9FD550C523D56F2C00CA99F3 /* EditPatientViewController.swift in Sources */,
+				9F653B4223C5FE1B0038C910 /* SideMenuViewController.swift in Sources */,
+				9F7F210C23C5A8EC00D9FDE3 /* MyProfileViewController.swift in Sources */,
+				9FFDC6B623C4B8B900FD1D1A /* IQPreviousNextView.swift in Sources */,
+				9FDE8B8123DCE3C30093017B /* CountryTableViewCell.swift in Sources */,
+				9F653B7523C7333C0038C910 /* Popover.swift in Sources */,
+				9FFDC6C423C4B8B900FD1D1A /* IQUIView+Hierarchy.swift in Sources */,
+				9F4BE60123C88B7D000DB296 /* CodesTableViewCell.swift in Sources */,
+				9FFDC6BC23C4B8B900FD1D1A /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				9F7B6B8223CC537E009D848A /* PatientMenuTableViewCell.swift in Sources */,
+				9FFDC6BD23C4B8B900FD1D1A /* IQKeyboardManagerConstants.swift in Sources */,
+				9FC9327A23D7064300EEB310 /* UserModel.swift in Sources */,
+				9F7B6B7C23CC525E009D848A /* InquiryMenuViewController.swift in Sources */,
+				9F9737FF23C5DE8400CBC865 /* SideMenuTableViewCell.swift in Sources */,
+				9F653B7923C7333C0038C910 /* PopoverItem.swift in Sources */,
+				9F7B6B8623CC83CD009D848A /* AddInquiryViewController.swift in Sources */,
+				9FDE8B7F23DCE3C30093017B /* CountryCode.swift in Sources */,
+				9FFDC6C723C4C72F00FD1D1A /* LoginViewController.swift in Sources */,
+				9F7B6B7E23CC526D009D848A /* PatientMenuViewController.swift in Sources */,
+				9FFDC6C923C4C76700FD1D1A /* RegisterViewController.swift in Sources */,
+				9FCACB9F23DEC56F002C723D /* AboutUsViewController.swift in Sources */,
+				9FCCEDB723D9C04400020B67 /* Account.swift in Sources */,
+				9FFDC6C323C4B8B900FD1D1A /* IQUITextFieldView+Additions.swift in Sources */,
+				9F7B6B8A23CC8AFC009D848A /* InquiryDetailsViewController.swift in Sources */,
+				9F7F211A23C5CE0B00D9FDE3 /* SWRevealViewController.m in Sources */,
+				9F653B7823C7333C0038C910 /* PopoverView.swift in Sources */,
+				9FFDC6C223C4B8B900FD1D1A /* IQUIViewController+Additions.swift in Sources */,
+				9FFDC6C023C4B8B900FD1D1A /* IQKeyboardManager.swift in Sources */,
+				9F7B6B8823CC8582009D848A /* AddInquiryTwoViewController.swift in Sources */,
+				9F7B6B8023CC536B009D848A /* InquiryMenuTableViewCell.swift in Sources */,
+				9FC274F323DD66A900F53B5B /* Constants.swift in Sources */,
+				9FDE8B7723DCC9670093017B /* customDropdown.swift in Sources */,
+				9FDE8B8023DCE3C30093017B /* CountrySelectView.swift in Sources */,
+				9FFDC6B823C4B8B900FD1D1A /* IQBarButtonItem.swift in Sources */,
+				9FFDC6C123C4B8B900FD1D1A /* IQUIScrollView+Additions.swift in Sources */,
+				9FCACBA123DEC57D002C723D /* ContactUsViewController.swift in Sources */,
+				9FFDC6B523C4B8B900FD1D1A /* IQTextView.swift in Sources */,
+				9FFDC6B723C4B8B900FD1D1A /* IQTitleBarButtonItem.swift in Sources */,
+				9FFDC65923C4768100FD1D1A /* AppDelegate.swift in Sources */,
+				9F653B7A23C7333C0038C910 /* PopoverController.swift in Sources */,
+				9F97380123C5DFAE00CBC865 /* HomeMenuViewController.swift in Sources */,
+				9FDE8B7923DCCD290093017B /* customDropdownTableViewCell.swift in Sources */,
+				9F4BE60323C88BA7000DB296 /* CodesPopOverViewController.swift in Sources */,
+				9FFDC65B23C4768100FD1D1A /* SceneDelegate.swift in Sources */,
+				9FFDC6B923C4B8B900FD1D1A /* IQToolbar.swift in Sources */,
+				9FFDC6BB23C4B8B900FD1D1A /* IQInvocation.swift in Sources */,
+				9F653B4023C5FC880038C910 /* EditProfileViewController.swift in Sources */,
+				9F653B7723C7333C0038C910 /* PopoverCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9FFDC65E23C4768100FD1D1A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FFDC65F23C4768100FD1D1A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9FFDC66323C4768D00FD1D1A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FFDC66423C4768D00FD1D1A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FFDC66723C4768D00FD1D1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9FFDC66823C4768D00FD1D1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FFDC66A23C4768D00FD1D1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CE3A625C19205D4F07CFC25 /* Pods-MedicalHub.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 676Y3V8KKA;
+				INFOPLIST_FILE = MedicalHub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SRC.MedicalHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MedicalHub/SWRevealViewController/MedicalHub-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FFDC66B23C4768D00FD1D1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11725C915B88596C437C1F2A /* Pods-MedicalHub.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 676Y3V8KKA;
+				INFOPLIST_FILE = MedicalHub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SRC.MedicalHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MedicalHub/SWRevealViewController/MedicalHub-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FFDC65023C4768100FD1D1A /* Build configuration list for PBXProject "MedicalHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FFDC66723C4768D00FD1D1A /* Debug */,
+				9FFDC66823C4768D00FD1D1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FFDC66923C4768D00FD1D1A /* Build configuration list for PBXNativeTarget "MedicalHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FFDC66A23C4768D00FD1D1A /* Debug */,
+				9FFDC66B23C4768D00FD1D1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FFDC64D23C4768100FD1D1A /* Project object */;
+}

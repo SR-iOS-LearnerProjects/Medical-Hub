@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="414homescreenback" translatesAutoresizingMaskIntoConstraints="NO" id="qts-71-eIf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginlogo" translatesAutoresizingMaskIntoConstraints="NO" id="GZH-nF-K2Q">
+                                <rect key="frame" x="90" y="320.66666666666669" width="234" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="234" id="2HP-4L-OSy"/>
+                                    <constraint firstAttribute="height" constant="95" id="Zpl-PR-vez"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GZH-nF-K2Q" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7d8-DC-wXO"/>
+                            <constraint firstItem="qts-71-eIf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EuM-N2-Hdo"/>
+                            <constraint firstItem="qts-71-eIf" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="FZv-Zz-Hbd"/>
+                            <constraint firstItem="GZH-nF-K2Q" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Oeq-vH-gpc"/>
+                            <constraint firstAttribute="bottom" secondItem="qts-71-eIf" secondAttribute="bottom" id="SPh-xc-N7u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qts-71-eIf" secondAttribute="trailing" id="USB-AA-Qv8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="414homescreenback" width="414" height="896"/>
+        <image name="loginlogo" width="156" height="63"/>
+    </resources>
+</document>
